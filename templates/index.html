@@ -52,15 +52,15 @@
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="pt-2">
-                <img src="https://dummy-website-nu.vercel.app/image/logo.svg" alt="logo" />
+                <img class="h-24 mr-12" src="/static/logo/logo.png" />
             </div>
             <!-- Menu Items -->
-            <div class="hidden space-x-6 md:flex">
-                <a href="#" class="hover:text-darkGrayishBlue">Home</a>
-                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-                <a href="#" class="hover:text-darkGrayishBlue">Sistem</a>
-                <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
-            </div>
+            <!-- <div class="hidden space-x-6 md:flex"> 
+            <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Sistem</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          </div> -->
             <!-- Button -->
             <a href="{{ url_for('prediction') }}" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-gray-900 md:block">Coba Sekarang</a>
 
@@ -86,7 +86,7 @@
     <section id="hero cta">
         <!-- Flex Container -->
         <div class="container flex flex-col-reverse items-center px-24 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
-            <!-- left item -->
+            <!-- Left item -->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
                 <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
                     Sistem Monitoring Endapan Tambak Udang dengan AI
@@ -149,7 +149,7 @@
                   Menggunakan sistem AI  
                 </h3>
                 <p class="text-slate-700 text-xl">
-                 Aplikasi Monitoring Endapan dengan sistem AI atau Machine Learning, denan banyaknya dataset dan data uji, membuat sistem ini memiliki akurasi yang tinggi, sekitar 96%.  
+                 Aplikasi Monitoring Endapan dengan sistem AI atau Machine Learning, denan banyaknya dataset dan data uji, membuat sistem ini memiliki akurasi yang tinggi, sekitar 88%.  
                 </p>
               </div>
             </div>
@@ -205,7 +205,7 @@
                   Memiliki beberapa hasil output
                 </h3>
                 <p class="text-slate-700 text-xl">
-                   Terdapat 3 hasil output proses training gambar yang akan ditampilkan yaitu klasifikasi status endapan pada tambak, status endapan dan perkiraan waktu untuk membersikan tambak.  
+                   Terdapat 3 hasil output proses training gambar yang akan ditampilkan yaitu klasifikasi status endapan pada tambak, status endapan dan perkiraan waktu untuk membersihkan tambak.  
                 </p>
               </div>
             </div>
@@ -230,53 +230,43 @@
             <div
               class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/2"
             >
-              <img src="https://dummy-website-nu.vercel.app/image/avatar-richard.png" class="w-16 -mt-14" alt="" />
-              <h5 class="text-lg font-bold">Akbar Afrianuur</h5>
+              <img src="https://media.licdn.com/dms/image/C5603AQF3xOW56M66qQ/profile-displayphoto-shrink_800_800/0/1663238777231?e=1689811200&v=beta&t=gotHJWijl9CGn9IlXGOdlTuyA7srf_R2GKifEQEvaqM" class="rounded-full w-16 -mt-14" alt="" />
+              <h5 class="text-lg font-bold">Muhammad Akbar Aprianur</h5>
               <p class="text-slate-700 text-xl">
                 “Saya percaya akan kebutuhan sistem filterasi dan informasi terkait tambak, khususnya pada tambak udang yang rentan akan kondisi air dan tambak”
               </p>
+
+              <a href="https://www.linkedin.com/in/muhammad-akbar-aprianur/" class="bg-transparent hover:bg-brightRed text-brightRed font-semibold hover:text-white py-2 px-4 border border-brightRed hover:border-transparent rounded">
+                LinkedIn
+              </a>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/2">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQGtHhyK4nIm6A/profile-displayphoto-shrink_800_800/0/1645274914619?e=1689811200&v=beta&t=ihfiyNhYVvMvm-PAYVrUusEVOGb6Np5E5KFm4_t5bdg" class="w-16 -mt-14 rounded-full" alt="" />
+                    <h5 class="text-lg font-bold">Atika Dwi Seftiany </h5>
+                    <p class="text-slate-700 text-xl">
+                        “Dengan sistem yang cerdas dan akurat, saya percaya bawa sistem Monitoring begitu diperlukan pada sektor perikanan dan pertambakan di indonesia.”
+                    </p>
+                    <a href="https://www.linkedin.com/in/atikadwi/" class="bg-transparent hover:bg-brightRed text-brightRed font-semibold hover:text-white py-2 px-4 border border-brightRed hover:border-transparent rounded">
+                LinkedIn
+              </a>
+                </div>
             </div>
-  
-            <!-- Testimonial 3 -->
-            <div
-              class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/2"
-            >
-              <img src="https://dummy-website-nu.vercel.app/image/avatar-anisha.png" class="w-16 -mt-14" alt="" />
-              <h5 class="text-lg font-bold">Ale Putri</h5>
-              <p class="text-slate-700 text-xl">
-                “Dengan sistem yang cerdas dan akurat, saya percaya bawa sistem Monitoring beitu diperlukan pada sektor perikanan dan pertambakan di indonesia.”
-              </p>
-            </div>
-          </div>
-          <!-- Button -->
-          <div class="my-16">
-            <a
-              href="{{ url_for('prediction') }}"
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-gray-900"
-              >Coba Sekarang</a
-            >
-          </div>
         </div>
-      </section>
-  
-      <!-- CTA Section -->
-      <section id="cta" class="bg-brightRed">
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="mt-10 bg-brightRed">
         <!-- Flex Container -->
-        <div
-          class="container flex flex-col items-center justify-between px-12 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
-        >
-          <!-- Heading -->
-          <h2
-            class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
-          >
-            Kemudahan dalam mengelola tambak udang
-          </h2>
-          <!-- Button -->
-          <div>
-            <a
-              href="{{ url_for('prediction') }}"
-              class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
-              >Coba Sekarang</a
+        <div class="container flex flex-col items-center justify-between px-12 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Kemudahan dalam mengelola tambak udang
+            </h2>
+            <!-- Button -->
+            <div>
+                <a href="{{ url_for('prediction') }}" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900">Coba Sekarang</a
             >
           </div>
         </div>
@@ -296,62 +286,58 @@
               Copyright &copy; 2023, All Rights Reserved
             </div>
             <!-- Logo -->
-            <div>
-              <img src="https://dummy-website-nu.vercel.app/image/logo-white.svg" class="h-8" alt="" />
+            <div class="flex flex-col space-y-3">
+              <a class="text-2xl font-bold text-brightRed" href="#">Techpond </a>
+                <a class="text-2xl font-bold text-white" href="#">Decision Support System </a>
             </div>
             <!-- Social Links Container -->
             <div class="flex justify-center space-x-4">
-              <!-- Link 1 -->
-              <a href="#">
+                <!-- Link 1 -->
+                <!-- <a href="#">
                 <img src="../static/img/icon-facebook.svg" alt="" class="h-8" />
-              </a>
-                    <!-- Link 2 -->
-                    <a href="#">
-                        <img src="../static/img/icon-youtube.svg" alt="" class="h-8" />
-                    </a>
-                    <!-- Link 3 -->
-                    <a href="#">
-                        <img src="../static/img/icon-twitter.svg" alt="" class="h-8" />
-                    </a>
-                    <!-- Link 4 -->
-                    <a href="#">
-                        <img src="../static/img/icon-pinterest.svg" alt="" class="h-8" />
-                    </a>
-                    <!-- Link 5 -->
-                    <a href="#">
-                        <img src="../static/img/icon-instagram.svg" alt="" class="h-8" />
-                    </a>
-                </div>
+              </a> -->
+                <!-- Link 2 -->
+                <!-- <a href="#">
+                <img src="../static/img/icon-youtube.svg" alt="" class="h-8" />
+              </a> -->
+                <!-- Link 3 -->
+                <!-- <a href="#">
+                <img src="../static/img/icon-twitter.svg" alt="" class="h-8" />
+              </a> -->
+                <!-- Link 4 -->
+                <!-- <a href="#">
+                <img src="../static/img/icon-pinterest.svg" alt="" class="h-8" />
+              </a> -->
+                <!-- Link 5 -->
+                <!-- <a href="#">
+                <img src="../static/img/icon-instagram.svg" alt="" class="h-8" />
+              </a> -->
             </div>
-            <!-- List Container -->
-            <div class="flex justify-around space-x-32">
-                <div class="flex flex-col space-y-3 text-white">
-                    <a href="#" class="hover:text-brightRed">Home</a>
-                    <a href="#" class="hover:text-brightRed">Sistem</a>
-                    <a href="#" class="hover:text-brightRed">Data</a>
-                    <a href="#" class="hover:text-brightRed">About Us</a>
-                </div>
-                <div class="flex flex-col space-y-3 text-white">
-                    <a href="#" class="hover:text-brightRed">Technology</a>
-                    <a href="#" class="hover:text-brightRed">Community</a>
-                    <a href="#" class="hover:text-brightRed">Privacy Policy</a>
-                </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+            <div class="flex flex-col space-y-3 text-white">
+                <a href="#" class="hover:text-brightRed">Home</a>
+                <a href="#" class="hover:text-brightRed">Sistem</a>
+                <a href="#" class="hover:text-brightRed">Data</a>
             </div>
+            <div class="flex flex-col space-y-3 text-white">
+                <a href="#" class="hover:text-brightRed">About Us</a>
+                <a href="#" class="hover:text-brightRed">Technology</a>
+            </div>
+        </div>
 
-            <!-- Input Container -->
-            <div class="flex flex-col justify-between">
-                <form>
-                    <div class="flex space-x-3">
-                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updated in your inbox" />
-                        <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
-                  Go
-                </button>
-                    </div>
-                </form>
-                <div class="hidden text-white md:block">
-                    Sistem Monitoring Endapan Udang Copyright &copy; 2022, All Rights Reserved
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+            <form>
+                <div class="flex space-x-3">
+                    <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Connect with us!" />
+                    <a href="mailto:m.akbar.aprianur@gmail.com" class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRed focus:outline-none">
+                  Email
+              </a>
                 </div>
-            </div>
+            </form>
+        </div>
         </div>
         </footer>
 

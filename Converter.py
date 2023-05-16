@@ -13,8 +13,10 @@ def get_first_orde(img_gray):
     numAllFrq = len(img_gray) * len(img_gray[0])
 
     # Get histogram value form grayscale image
-    hist = cv2.calcHist([img_gray], [0], None, [255], [0, 255])
+    # hist = cv2.calcHist([img_gray], [0], None, [255], [0, 255])
+    hist = cv2.calcHist([img_gray], [0], None, [256], [0, 256])
 
+    # Get Grayscale intensity Value
     # Get Grayscale intensity Value
     url_set = []
     for row in img_gray:
